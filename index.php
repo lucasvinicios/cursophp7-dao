@@ -42,10 +42,14 @@ echo json_encode($lista);
 //echo $aluno;
 
 // Update no banco 
-$usuario = new Usuario(); 
-$usuario->loadByID(8);
-$usuario->update("professor", "!@##@!"); 
+//$usuario = new Usuario(); 
+//$usuario->loadByID(8);
+//$usuario->update("professor", "!@##@!"); 
+//echo $usuario;
 
+$usuario = new Usuario; 
+$usuario->loadById(8);
+$usuario->delete();
 echo $usuario;
 
 
